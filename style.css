@@ -1,0 +1,46 @@
+html {
+    scrollbar-width: thin;
+    scrollbar-color: black #00000010;
+}
+
+body {
+    display: flex;
+    background-color: azure;
+    height: 100vh;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.nav {
+    --padding : 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.nav > p {
+    font-size: 1.30rem;
+    color: black;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    text-shadow: 0 0 3px black;
+}
+
+.nav > img {
+    width: 50px;
+    filter: drop-shadow(0 0 5px black);
+}
+
+
+
