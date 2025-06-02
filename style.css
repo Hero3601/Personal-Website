@@ -5,6 +5,7 @@
     --scale-factor : 1.12;
     --text-col: #909090;
     --link-hov: #5e5e5e;
+    --ico-shadow-spread: 7px;
 }
 
 html {
@@ -79,7 +80,7 @@ p , a {
 
 .intro > .portofolio {
     image-rendering: auto;
-    background-color: var(--color-por);
+    background-image: linear-gradient(to bottom , #363636 70%, #525252);
     padding: 40px;
     border-radius: 20px;
     width: 30%;
@@ -172,15 +173,31 @@ p , a {
 
 .infos {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
-    align-items: center;
     gap: 100px;
+    align-items: center;
     margin-top: 250px;
     margin-bottom: 50px;
 }
 
+.infos > p {
+    font-size: 65px;
+    color: black;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
 .infos > div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 70px;
+    align-items: center;
+}
+
+.infos > div > div {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -192,17 +209,17 @@ p , a {
     transition: 0.3s ease-in-out;
 }
 
-.infos > div > p:first-child::selection {
+.infos > div > div > p:first-child::selection {
     color: white;
     background-color: black;
 }
 
-.infos > div > p:first-child {
+.infos > div > div > p:first-child {
     font-size: 50px;
     color: black;
 }
 
-.infos > div > p:last-child {
+.infos > div > div > p:last-child {
     font-size: 25px;
     width: 70%;
     color: var(--text-col);
@@ -311,4 +328,104 @@ p , a {
 
 .samples-cont > div > img:hover {
     transform: scale(1.1);
+}
+
+.social-media {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 80px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.social-media > p {
+    font-size: 65px;
+    color: black;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.social-media > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 80px;
+}
+
+.social-media > div > div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to bottom , #363636 70%, #525252);
+    padding: 50px;
+    border-radius: 30px;
+    width: 250px;
+    height: 200px;
+    transition: 0.2s ease-in-out;
+}
+
+.social-media > div > div:hover {
+    transform: scale(1.09);
+}
+
+.social-media > div > div > p {
+    text-align: center;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.social-media > div > div > p::selection {
+    color: black;
+    background-color: white;
+}
+
+.social-media > div > div > p:first-child {
+    font-size: 45px;
+}
+
+.social-media > div > div > p:nth-child(2) {
+    font-size: 30px;
+}
+
+.social-media > div > div > p:nth-child(3) {
+    font-size: 16px;
+}
+
+.social-media > div > div[title="Twitter"] > p:first-child:hover {
+    color: #1DA1F2;
+    filter: drop-shadow(0 0 var(--ico-shadow-spread) #1DA1F2);
+}
+
+.social-media > div > div[title="Discord"] > p:first-child:hover {
+    color: #5e52ef;
+    filter: drop-shadow(0 0 var(--ico-shadow-spread) #5e52ef);
+}
+
+.social-media > div > div[title="Instagram"] > p:first-child:hover {
+    color: #E4405F;
+    filter: drop-shadow(0 0 var(--ico-shadow-spread) #E4405F);
+}
+
+.social-media > div > div[title="Facebook"] > p:first-child:hover {
+    color: #1877F2;
+    filter: drop-shadow(0 0 var(--ico-shadow-spread) #1877F2);
+}
+
+.social-media > div > div[title="Github"] > p:first-child:hover {
+    color: #181717;
+    filter: drop-shadow(0 0 var(--ico-shadow-spread) #181717);
+}
+
+.social-media > div > div[title="Steam"] > p:first-child:hover {
+    color: #171A21;
+    filter: drop-shadow(0 0 var(--ico-shadow-spread) #171A21);
+}
+
+.social-media > div > div[title="Chess"] > p:first-child:hover {
+    color: #00B388;
+    filter: drop-shadow(0 0 var(--ico-shadow-spread) #00B388);
 }
