@@ -11,15 +11,17 @@
 html {
     scrollbar-width: thin;
     scrollbar-color: black #00000010;
+    scroll-behavior: smooth;
 }
 
 body {
     display: flex;
     background-color: azure;
     height: 100%;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     gap: 100px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 body > p {
@@ -46,7 +48,7 @@ p , a {
     width: 90vw;
     --padding : 30px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding-left: var(--padding);
@@ -227,7 +229,7 @@ p , a {
 
 .samples-cont {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -235,7 +237,7 @@ p , a {
 
 .samples-cont > div {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
     height: 500px;
@@ -428,4 +430,58 @@ p , a {
 .social-media > div > div[title="Chess"] > p:first-child:hover {
     color: #00B388;
     filter: drop-shadow(0 0 var(--ico-shadow-spread) #00B388);
+}
+
+.friends {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+
+.friends > p {
+    font-size: 65px;
+    color: black;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.friends > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.friends > div > div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+}
+
+.friends > div > div > img {
+    image-rendering: auto;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.friends > div > div > img:hover {
+    transform: scale(1.04);
+}
+
+.friends > div > div > p {
+    font-size: 20px;
+}
+
+.friends > div > div > p::selection {
+    color: white;
+    background-color: black;
 }
