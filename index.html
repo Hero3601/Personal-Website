@@ -17,7 +17,7 @@
         <img src="imgs/infinity.png" alt="Logo PNG">
     </div>
 
-    <p class="head-title">Personal</p>
+    <p class="head-title" id="header">Personal</p>
 
     <div class="intro">
         <div class="portofolio" title="Mohamed's Card">
@@ -37,9 +37,11 @@
 
     </div>
 
+    <button id="toggle">🌗</button>
+
     <div class="infos">
 
-        <p>Experience</p>
+        <p id="experience">Experience</p>
 
         <div>
             <div class="experience-work">
@@ -67,7 +69,7 @@
 
     </div>
 
-    <p>Samples</p>
+    <p id="samples">Samples</p>
 
     <div class="samples-cont">
         <div>
@@ -93,7 +95,7 @@
     </div>
 
     <div class="social-media">
-        <p>Socials</p>
+        <p id="socials">Socials</p>
         <div>
             <div title="Twitter">
                 <p class="fab fa-twitter"></p>
@@ -134,7 +136,7 @@
     </div>
 
     <div class="friends">
-        <p>Friends</p>
+        <p id="friends">Friends</p>
         <div>
             <div>
                 <img src="imgs/haltrax.png" alt="Hlatrax">
@@ -175,7 +177,7 @@
             </div>
 
             <div>
-                <img src="imgs/mero.png" alt="Mero_Dev">
+                <img src="imgs/mero_new.png" alt="Mero_Dev">
                 <p>mero0370</p>
             </div>
             
@@ -219,6 +221,46 @@
 
         </div>
     </div>
+
+    <div class="footer">
+        <div>
+            <p>Legal</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookie Policy</p>
+        </div>
+
+        <div>
+            <p>Sections</p>
+            <div>
+                <a href="#header">Header</a>
+                <a href="#experience">Experience</a>
+            </div>
+
+            <div>
+                <a href="#samples">Samples</a>
+                <a href="#socials">Socials</a>
+            </div>
+            
+            <a href="#friends">Friends</a>
+
+        </div>
+    </div>
+
+    <script>
+    const toggle = document.getElementById("toggle");
+
+    const currentTheme = localStorage.getItem("theme") || "light";
+    document.documentElement.setAttribute("data-theme", currentTheme);
+
+    toggle.addEventListener("click", () => {
+        const currentTheme = document.documentElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+    
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+    });
+    </script>
     
 </body>
 </html>
