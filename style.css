@@ -14,7 +14,7 @@
     --background-gradient-first: #363636;
     --backgrond-gradient-second: #525252;
     --intro-shadow: #2d2d2d;
-    --portofolio-shadow: #1f57c6;
+    --portofolio-shadow: #29434c;
     --github-icon-hover: #202020;
     --discord-icon-hover: #5e52ef;
     --twitter-icon-hover: #1DA1F2;
@@ -90,6 +90,7 @@ p , a {
     margin: 0;
     position: sticky;
     top: 0;
+    opacity: 90%;
     z-index: 100;
 }
 
@@ -120,7 +121,7 @@ p , a {
     border-radius: 20px;
     width: 30%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
     height: 320px;
@@ -148,14 +149,16 @@ p , a {
 }
 
 .portofolio > img {
+    width: 170px;
+    height: 170px;
     border-radius: 20px;
     transition: 0.3s ease-in;
-    filter: drop-shadow(0 0 7px var(--portofolio-shadow));
+    filter: drop-shadow(0 0 10px var(--portofolio-shadow));
 }
 
 .portofolio > img:hover {
     border-radius: 15px;
-    filter: drop-shadow(0 0 10px var(--portofolio-shadow));
+    filter: drop-shadow(0 0 13px var(--portofolio-shadow));
 }
 
 .portofolio > div > p:first-child {
@@ -407,7 +410,7 @@ p , a {
 }
 
 .social-media > div > div:hover {
-    transform: scale(1.09);
+    transform: translateY(-15px) scale(1.04);
 }
 
 .social-media > div > div > p {
