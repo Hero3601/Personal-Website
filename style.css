@@ -3,7 +3,7 @@
 :root {
     --color-por: #181818ec;
     --padding : 15px;
-    --scale-factor : 1.12;
+    --scale-factor : 1.07;
     --text-col: #909090;
     --link-hov: #5e5e5e;
     --ico-shadow-spread: 7px;
@@ -11,16 +11,16 @@
     --white: white;
     --scrollbar-bgc: #00000010;
     --body-bgc: azure;
-    --background-gradient-first: #363636;
-    --backgrond-gradient-second: #525252;
     --intro-shadow: #2d2d2d;
+    --grd-first: #f1f3f5;
+    --grd-second: #dee2e6;
     --portofolio-shadow: #29434c;
     --github-icon-hover: #202020;
     --discord-icon-hover: #5e52ef;
     --twitter-icon-hover: #1DA1F2;
     --instagram-icon-hover: #E4405F;
     --facebook-icon-hover: #1877F2;
-    --steam-icon-hover: #171A21;
+    --steam-icon-hover: #13171f;
     --chess-icon-hover: #00B388;
     --nav-color: black;
 }
@@ -31,9 +31,10 @@
     --link-hov: #636363;
     --black: white;
     --white: black;
-    --background-gradient-first: #414141;
-    --backgrond-gradient-second: #353535;
+    --grd-first: #212529;
+    --grd-second: #343a40;
     --nav-color: #414141;    
+    --por-bgc: #00000034;
 }
 
 html {
@@ -109,14 +110,22 @@ p , a {
 
 .intro {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .intro > .portofolio {
+    background-image: url("imgs/cool-bgc.jpg");
     image-rendering: auto;
-    background-image: linear-gradient(to bottom , var(--background-gradient-first) 70%, var(--backgrond-gradient-second));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    image-rendering: auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 32px #2a2879;
     padding: 40px;
     border-radius: 20px;
     width: 30%;
@@ -126,11 +135,12 @@ p , a {
     align-items: center;
     height: 320px;
     transition: 0.3s ease-in-out;
-    box-shadow: 0 0 15px #535353;
+    /* box-shadow: 0 0 15px #535353; */
+    margin: 0;
 }
 
-.intro > .portofolio:hover {
-    transform: scale(var(--scale-factor));
+.intro > *:hover {
+    transform: scale(var(--scale-factor)) translateY(-10px);
 }
 
 .intro > img {
@@ -142,10 +152,6 @@ p , a {
     background-repeat: no-repeat;
     filter: drop-shadow(0 0 15px var(--intro-shadow));
     transition: 0.2s ease-in-out;
-}
-
-.intro > img:hover {
-    transform: scale(var(--scale-factor));
 }
 
 .portofolio > img {
@@ -164,11 +170,11 @@ p , a {
 .portofolio > div > p:first-child {
     color: white;
     font-size: 20px;
-    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 15px white;
 }
 
 .portofolio > div > p:last-child {
-    color:  var(--text-col);
+    color:  azure;
     font-size: 15px;
 }
 
@@ -401,7 +407,7 @@ p , a {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    background-image: linear-gradient(to bottom , var(--background-gradient-first) 70%, var(--backgrond-gradient-second));
+    background-image: linear-gradient(to bottom , var(--grd-first) 60%, var(--grd-second));
     padding: 50px;
     border-radius: 30px;
     width: 250px;
@@ -415,7 +421,7 @@ p , a {
 
 .social-media > div > div > p {
     text-align: center;
-    color: white;
+    color: var(--black);
     transition: 0.2s ease-in-out;
 }
 
