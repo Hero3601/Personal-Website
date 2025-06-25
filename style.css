@@ -193,17 +193,17 @@ p , a {
 }
 
 .so-cont {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    gap: 20px;
     align-items: center;
 }
 
 .so-cont > a {
     text-decoration: none;
     font-size: 25px;
+    text-align: center;
     color: white;
     filter: drop-shadow(0 0 7px white);
     transition: 0.2s ease-in-out;
@@ -650,7 +650,7 @@ p , a {
     align-items: center;
 }
 
-@media screen and (min-width: 350px) and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
 
     body {
         overflow-x: hidden;
@@ -686,7 +686,11 @@ p , a {
     }
 
     .so-cont {
-        width: 30%;
+        width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .infos {
@@ -777,7 +781,11 @@ p , a {
     }
 
     .so-cont {
-        width: 20%;
+        width: 30%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .infos {
