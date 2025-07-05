@@ -118,7 +118,7 @@ Personal-Website/
 ## 👤 Author
 
 - **GitHub:** [Hero3601](https://github.com/Hero3601)
-- **Website:** [yourdomain.com](https://hero3601.github.io/Personal-Website/)
+- **Website:** [Personal](https://hero3601.github.io/Personal-Website/)
 
 ---
 
