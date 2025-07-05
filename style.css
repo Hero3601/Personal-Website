@@ -36,7 +36,7 @@
     --white: black;
     --grd-first: #212529;
     --grd-second: #343a40;
-    --nav-color: #414141;    
+    --nav-color: #272727;    
     --por-bgc: #00000034;
     --glass-shadow: #131313;
     --pseudo-glass: #0000006c;
@@ -49,6 +49,7 @@ html {
     /* height: 100vh; */
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 /* Custom scrollbar for WebKit (Chrome, Edge) */
@@ -90,6 +91,7 @@ body > p#header {
     -ms-user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    transition: 0.3s ease-in-out;
 }
 
 body > p:not(#header) {
@@ -102,6 +104,7 @@ body > p:not(#header) {
     -moz-user-select: none;
     -webkit-user-select: none;
     margin-top: 300px;
+    transition: 0.3s ease-in-out;
 }
 
 p , a {
@@ -125,6 +128,7 @@ p , a {
     padding-right: var(--padding);
     margin: 0;
     z-index: 100;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav > p {
