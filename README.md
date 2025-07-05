@@ -129,12 +129,6 @@ Feel free to check the [issues page](https://github.com/Hero3601/Personal-Websit
 
 ---
 
-## 📜 License
-
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
-
----
-
 ## 💖 Show your support
 
 Give a ⭐️ if you like this project!
