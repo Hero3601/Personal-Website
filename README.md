@@ -74,42 +74,45 @@ This is the source code for [Hero3601's](https://github.com/Hero3601) personal w
 ## 📁 Project Structure
 
 ```plaintext
-Personal-Website/                
-|   index.html          
-|   README.md           
-|   style.css           
-|                       
-+---Game                
-|       Physics-win32.ex
-|       Physics-win64.ex
-|                       
-\---imgs                
-        abdallah.png    
-        aizen.png       
-        amicitius.png   
-        arrary.png      
-        braa.png        
+personal/                
+|   index.html
+|   README.md
+|   style.css
+|
++---Game
+|       Physics-win32.exe
+|       Physics-win64.exe
+|
+\---imgs
+        abdallah.png
+        aizen.png
+        amicitius.png
+        arrary.png
+        astra.png
+        braa.png
         carbon-fiber.jpg
-        cool-bgc.jpg    
-        dark.png        
-        dx-new.png      
-        fury.png        
-        haltrax.png     
-        infinity.png    
-        ismail.png      
-        mero.png        
-        mero_new.png    
-        moh.png         
-        nurazlz.png     
-        phys.png        
-        portofolio.png  
-        reon.png        
-        seif.png        
-        sog.png         
-        timer-wbs.png   
-        tunar.jpg       
-        unknown.png     
-        vilo.png        
+        cool-bgc.jpg
+        dark.png
+        dev-bread.PNG
+        dx-new.png
+        fury.png
+        haltrax.png
+        infinity.png
+        ismail.png
+        mero.png
+        mero_new.png
+        moh.png
+        nurazlz.png
+        phys.png
+        portofolio.png
+        rcturu.png
+        reon.png
+        seif.png
+        sog.png
+        timer-wbs.png
+        tunar.jpg
+        unknown.png
+        vilo.png
         vsc_ui.PNG      
 ```
 
